@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signo Zodiaco</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="updateSliderValue()">
+  <h1>Signo Zodiacal</h1>
+  <hr>
+  <br>
+  <label>Dia:</label>
+  <input type="range" id="slider" min="1" max="31" oninput="updateSliderValue()">
+  
+  <br>
+  <br>
+  <label for="showAllMonths">Mes:</label>
+  <select id="showAllMonths" onchange="toggleMonths()">
+    <option value="1">Enero</option>
+    <option value="2">Febrero</option>
+    <option value="3">Marzo</option>
+    <option value="4">Abril</option>
+    <option value="5">Mayo</option>
+    <option value="6">Junio</option>
+    <option value="7">Julio</option>
+    <option value="8">Agosto</option>
+    <option value="9">Septiembre</option>
+    <option value="10">Octubre</option>
+    <option value="11">Noviembre</option>
+    <option value="12">Diciembre</option>
+  </select>
+  <br>
+  <br>
+  <label id="selectedDate"></label>
+  <br>
+  <br>
+  <label id="signoZodiacal"></label>
+  <div ></div>
+<script src="app.js"></script>
+</body>
+</html>
